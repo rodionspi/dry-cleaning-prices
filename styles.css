@@ -67,8 +67,7 @@ h1, h2 {
     transform: scale(1.05); /* Легкое увеличение кнопки при наведении */
 }
 
-.prices_desc {
-    /* Цены на химчистку диванов и мягкой мебели */
+.prices_desc, .item_desc {
     color: #02B4BE;
     font-size: 42px;
     line-height: 64px;
@@ -86,7 +85,7 @@ h1, h2 {
     color: #2F3E53;
 }
 
-.prices {
+.prices_coaches, .prices_auto-cleaning {
     display: grid;
     grid-template-columns: repeat(2, minmax(250px, 1fr));
     gap: 5px;
@@ -110,15 +109,10 @@ h1, h2 {
 }
 
 .item img {
-    width: 70%;
-    height: auto;
     display: block;
-}
-
-.item h2 {
-    font-size: 1.2rem;
-    color: #333;
-    margin: 15px 15px 10px;
+    width: 300px;
+    object-fit: cover;
+    margin: auto
 }
 
 .item p {
