@@ -85,7 +85,7 @@ h1, h2 {
     color: #2F3E53;
 }
 
-.prices_coaches, .prices_auto-cleaning {
+.prices_coaches-cleaning, .prices_auto-cleaning, .prices_curtain-cleaning, .prices_mattress-cleaning {
     display: grid;
     grid-template-columns: repeat(2, minmax(250px, 1fr));
     gap: 5px;
