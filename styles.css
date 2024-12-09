@@ -1,0 +1,128 @@
+/* Heading 1 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: "Stengazeta";
+    font-weight: 800;
+}
+
+/* Наши цены на химчистку */
+.heading {
+    color: #02B4BE;
+    font-size: 52px;
+    line-height: 64px;
+}
+
+.new_clients_sale {
+    /* 15% скидка всем новым клиентам ! Антибактериальная обработка в подарок, гарантия результате */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    line-height: 31px;
+    font-size: 24px;
+    align-items: center;
+    text-align: center;
+    color: #2F3E53;
+}
+
+.consultation {
+    /* Group 3 */
+    width: 800px;
+    height: 90px;
+    margin: auto;
+    font-family: 'Roboto';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    align-items: center;
+}
+
+.contact_btn {
+    width: 300px;
+    background-color: #15D1D9;
+    color: white;
+    padding: 16px 0px; /* Увеличенный отступ для больших кнопок */
+    margin: 10px 30px; /* Немного увеличенное расстояние между кнопками */
+    text-decoration: none;
+    border-radius: 15px; /* Более плавные границы */
+    font-size: 24px; /* Увеличенный текст */
+    font-weight: bold;
+    text-align: center; /* Центрирование текста */
+    align-items: center;
+    display: inline-block; /* Чтобы кнопки занимали только свою ширину */
+    transition: background-color 0.3s, transform 0.2s; /* Плавный переход для эффекта */
+}
+
+.contact_btn:hover {
+    background-color: #007a7a;
+    transform: scale(1.05); /* Легкое увеличение кнопки при наведении */
+}
+
+.prices_desc {
+    /* Цены на химчистку диванов и мягкой мебели */
+    color: #02B4BE;
+    font-size: 42px;
+    line-height: 64px;
+}
+
+.clarification {
+    /* Уточните материал вашей обивки у менеджера */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    line-height: 31px;
+    font-size: 24px;
+    align-items: center;
+    text-align: center;
+    color: #2F3E53;
+}
+
+.prices {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    gap: 5px;
+    padding: 20px;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.item img {
+    width: 70%;
+    height: auto;
+    display: block;
+}
+
+.item h2 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 15px 15px 10px;
+}
+
+.item p {
+    font-size: 1rem;
+    color: #666;
+    margin: 0 15px 10px;
+}
