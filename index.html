@@ -9,15 +9,19 @@
 <body>
     <div class="container">
         <!-- Основной заголовок -->
-        <h1 class="heading">Наши цены на химчистку</h1>
-        <p class="new_clients_sale">15% скидка всем новым клиентам!<br>
-           Антибактериальная обработка в подарок, гарантия результата.</p>
-        <p class="consultation">Для получения консультации по чистке и точного расчета стоимости заказа,
-           вы можете прислать нам фотографии вашей мебели, матраса или штор в WhatsApp или Telegram.</p>
-        <div class="contact_buttons">
-            <a href="#" class="contact_btn"><span>Написать в Telegram</span></a>
-            <a href="#" class="contact_btn"><span>Написать в WhatsApp</span></a>
-            <a href="#" class="contact_btn"><span>Написать в WhatsApp</span></a>
+        <div class="pricing-header">
+            <h1 class="pricing-header__title">Наши цены на химчистку</h1>
+            <p class="pricing-header__offer">15% скидка всем новым клиентам!<br>
+               Антибактериальная обработка в подарок, гарантия результата.</p>
+            <p class="pricing-header__consultation">
+                Для получения консультации по чистке и точного расчета стоимости заказа,
+                вы можете прислать нам фотографии вашей мебели, матраса или штор в WhatsApp или Telegram.
+            </p>
+            <div class="pricing-header__contact-buttons">
+                <a href="#" class="contact-button"><span>Написать в Telegram</span></a>
+                <a href="#" class="contact-button"><span>Написать в Telegram</span></a>
+                <a href="#" class="contact-button"><span>Написать в Telegram</span></a>
+            </div>
         </div>
 
         <!-- Раздел цен на химчистку диванов и мягкой мебели -->
@@ -190,7 +194,61 @@
                 <p>Натуральные / синтетика / бархат</p>
                 <p>Цена от XX рублей</p>
             </div>
-        </div>  
+        </div> 
+        
+        <section class="order-steps">
+            <h2 class="order-steps__title">Как рассчитать точную стоимость и сделать заказ</h2>
+            <div class="order-steps__container">
+                <div class="order-step">
+                    <div class="order-step__number">1</div>
+                    <h3 class="order-step__title">Отправьте фото</h3>
+                    <p class="order-step__description">Отправить фото на WhatsApp по номеру 8 (910) 089-90-01</p>
+                </div>
+                <div class="order-step">
+                    <div class="order-step__number">2</div>
+                    <h3 class="order-step__title">Точный расчет</h3>
+                    <p class="order-step__description">Произведём оценку и скажем стоимость выезда сотрудника</p>
+                </div>
+                <div class="order-step">
+                    <div class="order-step__number">3</div>
+                    <h3 class="order-step__title">Сделать заказ</h3>
+                    <p class="order-step__description">Уточните день, время и адрес для выезда сотрудника</p>
+                </div>
+                <div class="order-step">
+                    <div class="order-step__number">4</div>
+                    <h3 class="order-step__title">Принимайте работу</h3>
+                    <p class="order-step__description">После получения услуги проверьте качество и оставьте свой отзыв</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="contact-section">
+            <div class="contact-section__text">
+                Для получения консультации по чистке и точного расчёта стоимости заказа, 
+                вы можете прислать нам фотографии вашей мебели, матраса или штор в WhatsApp, Telegram или ВКонтакте.
+            </div>
+            <div class="contact-section__buttons">
+                <a href="#" class="contact-button"><span>Написать в WhatsApp</span></a>
+                <a href="#" class="contact-button"><span>Написать в Telegram</span></a>
+                <a href="#" class="contact-button"><span>Написать в VK</span></a>
+            </div>
+        </section> 
+        <div class="cleaning-container">
+            <div class="cleaning-left">
+              <h1 class="cleaning-title">EURO DRY CLEANING</h1>
+              <h2 class="cleaning-subtitle">СПАСЕТ ВАШУ МЕБЕЛЬ</h2>
+              <img src="cleaning-illustration.png" alt="Cleaning Illustration" class="cleaning-image">
+            </div>
+            <div class="cleaning-right">
+              <h3 class="cleaning-help-text">ПРИЙДЕМ К ВАМ НА ПОМОЩЬ В ЛЮБОЙ СИТУАЦИИ!</h3>
+              <form class="cleaning-form">
+                <h4 class="form-title">Оставить заявку</h4>
+                <input type="text" class="form-input" placeholder="Имя" required>
+                <input type="tel" class="form-input" placeholder="Номер телефона" required>
+                <button type="submit" class="form-button">Отправить</button>
+              </form>
+            </div>
+        </div>          
     </div>
 </body>
 </html>
