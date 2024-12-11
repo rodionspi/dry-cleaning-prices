@@ -215,19 +215,19 @@ h1, h2 {
 }
 
 /* Секция шагов */
-.order__steps {
+.steps {
     text-align: center;
     padding: 40px 20px;
     background-color: #ffffff;
 }
 
-.order__steps_title {
+.steps__title {
     font-size: 40px;
     color: #15D1D9;
     margin-bottom: 30px;
 }
 
-.order__steps_container {
+.steps__container {
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -236,7 +236,7 @@ h1, h2 {
     margin: 0 auto;
 }
 
-.order__step_number {
+.step__number {
     font-size: 24px;
     font-weight: bold;
     color: #FFF;
@@ -249,7 +249,7 @@ h1, h2 {
     z-index: 1;
 }
 
-.order__step_number::before {
+.step__number::before {
     content: "";
     position: absolute;
     top: 16%; /* Центр блока по вертикали */
@@ -262,13 +262,13 @@ h1, h2 {
     z-index: 0;
 }
 
-.order__step_title {
+.step__title {
     font-size: 18px;
     margin-bottom: 10px;
     font-weight: bold;
 }
 
-.order__step_description {
+.step__description {
     font-size: 14px;
     color: #555;
 }
@@ -310,7 +310,7 @@ h1, h2 {
     flex-wrap: wrap;
 }
 
-.cleaning__container {
+.cleaning {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -319,28 +319,15 @@ h1, h2 {
     margin: 0 auto;
 }
   
-.cleaning__left {
-    width: 60%;
-}
-  
-.cleaning__title {
-    font-size: 36px;
-    color: #53c8dd;
-    margin: 0;
-}
-  
-.cleaning__subtitle {
-    font-size: 28px;
-    color: #333;
-    margin: 10px 0 20px;
-}
-  
 .cleaning__image {
     width: 100%;
-    max-width: 500px;
     height: auto;
 }
-  
+
+.cleaning__left {
+    width: 65%;
+}
+
 .cleaning__right {
     width: 35%;
     text-align: center;
@@ -348,41 +335,47 @@ h1, h2 {
     padding: 20px;
 }
   
-.cleaning__help-text {
-    font-size: 18px;
+.cleaning__text {
+    font-size: 24px;
     color: #53c8dd;
+    font-family: 'Stengazeta';
     margin-bottom: 20px;
+    line-height: 26px;
 }
-  
 .cleaning__form {
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 10px;
     border-radius: 0 0 10px 10px;
     border: 1px solid black;
-}
-  
-.form__title {
-    font-size: 20px;
-    margin-bottom: 15px;
-    color: #333;
+    padding: 20px
 }
 
-.form__label {
-    text-align: left;
+.cleaning__form-title {
+    font-size: 20px;
+    color: #53c8dd;
+    text-align: left; 
+    margin: 10px 0;
 }
-  
-.form__input {
-    width: 80%;
+
+.cleaning__form-label {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left; 
+    color: #00000080;
+}
+
+.cleaning__form-input {
+    width: auto; 
     padding: 10px;
-    margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
+    text-align: left; 
+    margin: 10px 0px; 
 }
-  
-.form__button {
+
+.cleaning__form-button {
     padding: 10px 20px;
     background-color: #53c8dd;
     color: white;
@@ -391,9 +384,12 @@ h1, h2 {
     font-size: 16px;
     cursor: pointer;
     transition: background 0.3s;
+    width: auto; /* Default width can be adjusted */
+    margin: 0; /* Allow custom positioning with margin */
 }
+
   
-.form__button:hover {
+.cleaning__form-button:hover {
     background-color: #45b2c2;
 }
 
