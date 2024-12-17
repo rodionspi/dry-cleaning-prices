@@ -219,7 +219,7 @@ h1, h2 {
     top: 50%; /* Центр блока по вертикали */
     left: 60%;
     right: 0;
-    width: 600%; 
+    width: 600%;
     height: 2px; /* Толщина линии */
     background-color: #15D1D9; /* Цвет линии */
     transform: translateY(-50%); /* Уточняем центрирование */
@@ -470,6 +470,10 @@ h1, h2 {
 
     .pricing__button-icon, .contact__button-icon {
         display: block;
+    }
+
+    .step__number::before {
+        width: calc(24vw + 5px);
     }
 }
 
