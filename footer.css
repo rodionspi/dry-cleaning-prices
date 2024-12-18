@@ -1,6 +1,6 @@
 .footer {
     flex-shrink: 0;
-    height: 872px;
+    padding-top: 20px;
     max-width: 1920px;
     background: #f4f7f7;
     /*outline: 8px rgb(133, 5, 69) solid;*/
@@ -168,8 +168,6 @@
 }
 @media (max-width: 500px) {
     .footer__content {
-        padding: 20px;
-        width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr; /* 2 колонки: первая будет занимать 1 часть, а вторая 2 части */
         gap: 10px; /* Уменьшаем отступы */
@@ -203,6 +201,10 @@
     }
     .footer__text {
         margin-top: -15px;
+    }
+
+    .footer__socials {
+        width: 100%;
     }
 }
 @media (max-width: 380px) {

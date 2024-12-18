@@ -123,7 +123,6 @@
         justify-content: space-between;
 
         max-width: 810px;
-        height: 60px;
         background: #f4f7f7;
     }
 
@@ -227,7 +226,6 @@
         align-items: center;
         position: fixed;
         top: 11px;
-        left: 90%;
         width: 40px;
         height: 40px;
         cursor: pointer;
@@ -392,10 +390,5 @@
     .hamburger-menu__openingHours-number {
         font-family: 'Lato';
         font-size: 20px;
-    }
-}
-@media (max-width: 380px) {
-    .hamburger-menu__button {
-        left: 80%;
     }
 }

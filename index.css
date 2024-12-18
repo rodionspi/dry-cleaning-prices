@@ -67,7 +67,6 @@ h1, h2 {
 .pricing__consultation {
     /* Group 3 */
     width: 800px;
-    height: 90px;
     margin: auto;
     font-family: 'Roboto';
     font-size: 24px;
@@ -113,9 +112,13 @@ h1, h2 {
     display: none;
 }
 
-.prices__title, .item {
+.prices__title, .item, .prices__title_phone {
     color: #02B4BE;
     font-size: 42px;
+}
+
+.prices__title_phone {
+    display: none;
 }
 
 .clarification {
@@ -131,6 +134,7 @@ h1, h2 {
 }
 
 .coaches, .cars, .curtains, .mattresses, .carpets {
+    width: 95%;
     display: grid;
     grid-template-columns: repeat(2, minmax(250px, 1fr));
     gap: 5px;
@@ -385,7 +389,6 @@ h1, h2 {
         justify-content: center; /* Центрирование по вертикали */
         align-items: center; /* Центрирование по горизонтали (слева) */
         height: 100%; /* Убедимся, что блок занимает всю высоту */
-        padding: 20px; /* Отступ внутри блока */
         box-sizing: border-box; /* Учитываем отступы в расчёте размеров */
         background-image: url('images/curtain_euro_cleaning.png');
         object-fit: contain;
@@ -404,8 +407,12 @@ h1, h2 {
         margin-top: 70px;
         border-radius: 40px;
         display: block;
-        width: 280px;
         padding: 0;
+    }
+
+    .button {
+        height: 40px;
+        padding: 10px;
     }
 
     .pricing__calculate span {
@@ -454,7 +461,7 @@ h1, h2 {
         height: 60px;
         text-align: center;
         border-radius: 40px;
-        padding: 16px 20px;
+        padding: 10px 20px;
     }
 
     .pricing__button img, .contact__button img {
@@ -506,6 +513,11 @@ h1, h2 {
 
     .item p {
         margin: 0 15px 20px;
+    }
+
+    .pricing__consultation {
+        width: auto;
+        margin: auto 10px;
     }
 
 
@@ -563,4 +575,191 @@ h1, h2 {
         font-size: 14px;
         font-weight: bold;
     }
+}
+
+@media screen and (max-width: 625px) {
+    .pricing {
+        width: 100%;
+    }
+    .pricing__grid {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+    .pricing__left {
+        width: 100%;
+        height: 510px;
+    }
+    .pricing__image {
+        display: none;
+    }
+
+    .pricing__buttons, .contact__buttons {
+        margin: 10px;
+    }
+    .prices__title_phone {
+        display: inline-block;
+    }
+
+    .button {
+        font-size: 15px;
+        height: 40px;
+    }
+
+    .pricing__button-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .pricing__calculate.button {
+        margin-top: 20px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column; /* Располагаем текст поочереди по вертикали */
+    }
+
+    .coaches, .cars, .curtains, .mattresses, .carpets {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr); 
+        padding: 0px;
+    }
+
+    .steps__container {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    .step__number::before {
+        width: 0;
+    }
+
+    .coach__item:nth-child(2),
+    .coach__item:nth-child(3),
+    .coach__item:nth-child(4),
+    .coach__item:nth-child(6),
+    .coach__item:nth-child(7),
+    .coach__item:nth-child(8),
+    .coach__item:nth-child(10),
+    .coach__item:nth-child(12),
+    .coach__item:nth-child(14),
+    .car__item:nth-child(2),
+    .car__item:nth-child(3),
+    .car__item:nth-child(4),
+    .mattress__item:nth-child(2),
+    .curtain__item:nth-child(2),
+    .carpet__item:nth-child(2) {
+        display: none;
+    }
+
+    .pricing-info {
+        margin: auto 20px;
+    }
+
+    .contact__title {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .contact {
+        position: relative; /* Убедитесь, что родительский элемент имеет относительное позиционирование */
+        height: auto;
+    }
+
+    .contact__buttons {
+        position: absolute;
+        top: 100%; /* Смещаем элемент вниз за пределы родительского элемента */
+        left: 50%;
+        transform: translateX(-50%); /* Центрируем элемент по горизонтали */
+        width: 100%; /* Устанавливаем ширину элемента */
+        margin: 0px;
+    }
+    .cleaning {
+        margin-top: 250px;
+    }
+
+    .cleaning__left {
+        display: none;
+    }
+    .cleaning__right {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .pricing__calculate {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .pricing__calculate.text {
+        margin:5px auto;
+    }
+
+    .pricing__consultation {
+        font-size: 12px;
+        line-height: 16px;
+        margin-top: 10px;
+    }
+
+    .prices__title_phone {
+        font-size: 24px;
+        margin: auto 5px;
+        font-weight: 400;
+    }
+
+    .clarification {
+        display: none;
+    }
+
+    .clarification_phone {
+        font-size: 14px;
+        margin: auto 5px;
+    }
+
+    .coaches, .cars, .curtains, .mattresses, .carpets {
+        width: 90%;
+    }
+
+    .item img {
+        width: 160px;
+    }
+
+    .item p {
+        font-size: 14px;
+        line-height: 16px;
+        height: auto;
+    }
+
+    .contact__title {
+        font-size: 12px;
+    }
+
+    .steps__title {
+        font-size: 24px;
+    }
+
+    .pricing-info__guarantee {
+        padding: 0px;
+    }
+
+    .pricing-info__item, .pricing-info__guarantee-text, .pricing-info__guarantee-text strong {
+        font-size: 12px;
+    }
+
+    .coach__title, .car__title, .curtain__title, .mattres__title, .carpet__title {
+        font-size: 32px;
+    }
+
+    .pricing__button, .contact__button {
+        height: 30px;
+        padding: 5px 20px;
+    }
+
+    .pricing__button img, .contact__button img {
+        width: 30px;
+        height: 30px;
+    }
+
 }
