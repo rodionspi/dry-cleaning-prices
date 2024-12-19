@@ -275,6 +275,10 @@ h1, h2 {
     margin: auto
 }
 
+.carousel {
+    display: none;
+}
+
 .contact__buttons {
     display: flex;
     justify-content: center;
@@ -404,10 +408,13 @@ h1, h2 {
     }
 
     .pricing__calculate.button {
-        margin-top: 70px;
+        margin-top: 20px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column; /* Располагаем текст поочереди по вертикали */
         border-radius: 40px;
-        display: block;
-        padding: 0;
     }
 
     .button {
@@ -516,8 +523,10 @@ h1, h2 {
     }
 
     .pricing__consultation {
-        width: auto;
-        margin: auto 10px;
+        width: 80%;
+        line-height: 16px;
+        margin: 20px auto auto;
+        font-size: 14px;
     }
 
 
@@ -575,6 +584,10 @@ h1, h2 {
         font-size: 14px;
         font-weight: bold;
     }
+
+    .pricing__calculate.button {
+        height: 40px;
+    }
 }
 
 @media screen and (max-width: 625px) {
@@ -611,7 +624,6 @@ h1, h2 {
 
     .pricing__calculate.button {
         margin-top: 20px;
-        height: 60px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -632,24 +644,6 @@ h1, h2 {
 
     .step__number::before {
         width: 0;
-    }
-
-    .coach__item:nth-child(2),
-    .coach__item:nth-child(3),
-    .coach__item:nth-child(4),
-    .coach__item:nth-child(6),
-    .coach__item:nth-child(7),
-    .coach__item:nth-child(8),
-    .coach__item:nth-child(10),
-    .coach__item:nth-child(12),
-    .coach__item:nth-child(14),
-    .car__item:nth-child(2),
-    .car__item:nth-child(3),
-    .car__item:nth-child(4),
-    .mattress__item:nth-child(2),
-    .curtain__item:nth-child(2),
-    .carpet__item:nth-child(2) {
-        display: none;
     }
 
     .pricing-info {
@@ -685,9 +679,42 @@ h1, h2 {
     .cleaning__right {
         width: 100%;
     }
+
+    .pricing__calculate.button {
+        width: 80%
+    }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
+    .carousel {
+        display: block;
+        position: relative;
+        width: 30%;
+        max-width: 1200px;
+        margin: 10px auto;
+        overflow: hidden;
+    }
+
+    .carousel__button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .carousel__button.left {
+        left: 10px;
+    }
+
+    .carousel__button.right {
+        right: 10px;
+    }
+
+    .carousel__button img {
+        width: 30px;
+        height: 30px;
+    }
+
     .pricing__calculate {
         font-size: 20px;
         font-weight: 400;
