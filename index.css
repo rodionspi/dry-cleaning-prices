@@ -133,7 +133,7 @@ h1, h2 {
     color: #2F3E53;
 }
 
-.coaches, .cars, .curtains, .mattresses, .carpets {
+.items {
     width: 95%;
     display: grid;
     grid-template-columns: repeat(2, minmax(250px, 1fr));
@@ -630,7 +630,7 @@ h1, h2 {
         flex-direction: column; /* Располагаем текст поочереди по вертикали */
     }
 
-    .coaches, .cars, .curtains, .mattresses, .carpets {
+    .items {
         width: 90%;
         grid-template-columns: repeat(1, 1fr); 
         padding: 0px;
@@ -653,39 +653,7 @@ h1, h2 {
     .contact__title {
         width: 95%;
     }
-}
 
-@media screen and (max-width: 450px) {
-    .contact {
-        position: relative; /* Убедитесь, что родительский элемент имеет относительное позиционирование */
-        height: auto;
-    }
-
-    .contact__buttons {
-        position: absolute;
-        top: 100%; /* Смещаем элемент вниз за пределы родительского элемента */
-        left: 50%;
-        transform: translateX(-50%); /* Центрируем элемент по горизонтали */
-        width: 100%; /* Устанавливаем ширину элемента */
-        margin: 0px;
-    }
-    .cleaning {
-        margin-top: 250px;
-    }
-
-    .cleaning__left {
-        display: none;
-    }
-    .cleaning__right {
-        width: 100%;
-    }
-
-    .pricing__calculate.button {
-        width: 80%
-    }
-}
-
-@media screen and (max-width: 400px) {
     .carousel {
         display: block;
         position: relative;
@@ -711,13 +679,55 @@ h1, h2 {
     }
 
     .carousel__button img {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .carousel__button img {
         width: 30px;
         height: 30px;
     }
 
+    .contact {
+        position: relative; /* Убедитесь, что родительский элемент имеет относительное позиционирование */
+        height: auto;
+    }
+
+    .contact__buttons {
+        position: absolute;
+        top: 100%; /* Смещаем элемент вниз за пределы родительского элемента */
+        left: 50%;
+        transform: translateX(-50%); /* Центрируем элемент по горизонтали */
+        width: 100%; /* Устанавливаем ширину элемента */
+        margin: 0px;
+    }
+    .cleaning {
+        margin-top: 250px;
+    }
+
+    .cleaning__left {
+        display: none;
+    }
+    .cleaning__right {
+        width: 100%;
+    }
+
+    .pricing__calculate.button {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
     .pricing__calculate {
         font-size: 20px;
         font-weight: 400;
+    }
+
+    .cleaning {
+        margin-top: 150px;
     }
 
     .pricing__calculate.text {
@@ -745,7 +755,7 @@ h1, h2 {
         margin: auto 5px;
     }
 
-    .coaches, .cars, .curtains, .mattresses, .carpets {
+    .items {
         width: 90%;
     }
 
@@ -775,7 +785,7 @@ h1, h2 {
         font-size: 12px;
     }
 
-    .coach__title, .car__title, .curtain__title, .mattres__title, .carpet__title {
+    .item__title    {
         font-size: 32px;
     }
 
