@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   function handleResize() {
     if (window.innerWidth > 625) {
-      const itemClasses = ["car__item", "coach__item", "corner-coach__item", "armchair__item", "pillow__item",  "mattres__item", "curtain__item", "carpet__item"];
+      const itemClasses = ["car__item", "coach__item", "corner-coach__item", "armchair__item", "pillow__item",  "mattress__item", "curtain__item", "carpet__item"];
 
       itemClasses.forEach((itemClass) => {
         const items = document.querySelectorAll(`.${itemClass}`);
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       });
     } else {
-      const itemClasses = ["car__item", "coach__item", "corner-coach__item", "armchair__item", "pillow__item",  "mattres__item", "curtain__item", "carpet__item"];
+      const itemClasses = ["car__item", "coach__item", "corner-coach__item", "armchair__item", "pillow__item",  "mattress__item", "curtain__item", "carpet__item"];
       let currentIndex = 0;
       let displayCount = 1;
 
